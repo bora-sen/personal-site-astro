@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: TuskerRegular;
+  src: url("../assets//fonts//tusker_regular.ttf");
+}
+@font-face {
+  font-family: TuskerBold;
+  src: url("../assets//fonts//tusker_bold.ttf");
+}
+
+@layer base {
+  body {
+    @apply bg-black transition-all box-border scroll-smooth font-poppins;
+  }
+  ::-moz-selection {
+    @apply text-white bg-black;
+  }
+
+  ::selection {
+    @apply text-white bg-primary-purple;
+  }
+}
