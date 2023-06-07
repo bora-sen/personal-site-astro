@@ -1,0 +1,65 @@
+---
+import dataset from "../dataset.json"
+const { works } = dataset
+const titles = []
+works.map((work) => {
+  return titles.push(work.title)
+})
+const titlesText = titles.join(" | ")
+const titlesReverseText = titles.reverse().join(" | ")
+---
+
+<section id="moving_texts_section" class="w-full h-screen text-white flex items-center justify-center">
+  <div class="absolute w-full h-full z-30">
+    <img id="moving_lines_back_image" class="w-full h-full object-cover object-center" alt="hero background" src="/assets/moving_lines_bg.jpg" />
+  </div>
+
+  <div class="overflow-hidden z-40 h-full w-full flex items-center justify-center text-center">
+    <div class="font-tusker whitespace-nowrap rotate-[24deg] sm:rotate-[7deg]">
+      <div class="moving_text_left text-7xl mb-3">
+        <span>{titlesText}</span>
+      </div>
+      <div class="moving_text_right text-9xl">
+        <span>{titlesReverseText}</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  import { gsap } from "gsap"
+  import { ScrollTrigger } from "gsap/ScrollTrigger"
+  gsap.registerPlugin(ScrollTrigger)
+  document.addEventListener("DOMContentLoaded", () => {
+    gsap.fromTo(
+      ".moving_text_left",
+      {
+        x: 0,
+      },
+      {
+        scrollTrigger: {
+          trigger: "#moving_texts_section",
+          start: "top center",
+          end: "bottom top",
+          scrub: true,
+        },
+        x: 170,
+      }
+    )
+    gsap.fromTo(
+      ".moving_text_right",
+      {
+        x: 0,
+      },
+      {
+        scrollTrigger: {
+          trigger: "#moving_texts_section",
+          start: "top center",
+          end: "bottom top",
+          scrub: true,
+        },
+        x: -170,
+      }
+    )
+  })
+</script>
