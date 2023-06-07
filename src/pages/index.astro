@@ -1,12 +1,14 @@
 ---
-import MainLayout from "../layouts/MainLayout.astro";
-import Hero from "../sections/Hero"
+import MainLayout from "../layouts/MainLayout.astro"
+import MovingLines from "../sections/MovingLines.astro"
+import Hero from "../sections/Hero.astro";
+import WhoAmi from "../sections/WhoAmi.astro";
+import Works from "../sections/Works.astro"
 ---
 
-
-
 <MainLayout title="Main Page" description="Main Page" keywords="Main, Page">
-	Hello World
-	<Hero client:load />
+  <Hero />
+  <WhoAmi />
+  <Works />
+  <MovingLines />
 </MainLayout>
-
