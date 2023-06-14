@@ -1,0 +1,10 @@
+@font-face {
+  font-family: TuskerRegular;
+  src: url("tusker_regular.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: TuskerBold;
+  src: url("tusker_bold.ttf");
+  font-display: swap;
+}

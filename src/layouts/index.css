@@ -2,14 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: TuskerRegular;
-  src: url("../assets//fonts//tusker_regular.ttf");
-}
-@font-face {
-  font-family: TuskerBold;
-  src: url("../assets//fonts//tusker_bold.ttf");
-}
 
 @layer base {
   body {
