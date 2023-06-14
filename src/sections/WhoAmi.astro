@@ -20,7 +20,8 @@
 </section>
 <script>
   import * as THREE from "three"
-  import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader"
+  import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js"
+  import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader.js"
   import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
 
   import { gsap } from "gsap"
@@ -52,9 +53,12 @@
   camera.position.setZ(5)
   const loader = new GLTFLoader()
 
+  const dracoLoader = new DRACOLoader()
+  dracoLoader.setDecoderPath("https://www.gstatic.com/draco/v1/decoders/")
+  loader.setDRACOLoader(dracoLoader)
+
   loader.load("/assets/model/IBMPC.glb", (gltf) => {
     const model = gltf.scenes[0]
-    console.log(model.uuid)
     model.castShadow = true
     model.position.setY(-1)
     model.rotateY(-0.8)
