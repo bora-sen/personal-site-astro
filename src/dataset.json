@@ -1,6 +1,12 @@
 {
   "works": [
     {
+      "title": "Acronym© Website Redesign",
+      "placeholderImg": "/images/works/acronym.webp",
+      "redURL": "https://bora-sen.github.io/acronym-website/",
+      "desc": "A clothing brand website redesign project made with astro."
+    },
+    {
       "title": "Modio - Media Agency Website",
       "placeholderImg": "/images/works/modio-ss.webp",
       "redURL": "https://bora-sen.github.io/modio-website/",
