@@ -1,6 +1,12 @@
 {
   "works": [
     {
+      "title": "Retro Donut Website",
+      "placeholderImg": "/images/works/retro-donut.webp",
+      "redURL": "https://bora-sen.github.io/retro-donut-website/",
+      "desc": "Responsive retro donut website with parallax gsap effects."
+    },
+    {
       "title": "Acronym© Website Redesign",
       "placeholderImg": "/images/works/acronym.webp",
       "redURL": "https://bora-sen.github.io/acronym-website/",
