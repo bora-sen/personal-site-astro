@@ -1,22 +1,48 @@
 {
-  "works": [
+  "featuredWorks": [
     {
-      "title": "Retro Donut Website",
-      "placeholderImg": "/images/works/retro-donut.webp",
-      "redURL": "https://bora-sen.github.io/retro-donut-website/",
-      "desc": "Responsive retro donut website with parallax gsap effects."
+      "title": "Modio - Media Agency Website",
+      "placeholderImg": "/images/works/modio-ss.webp",
+      "alternate": {
+        "title": "Test modio",
+        "imageURL": "/images/works/modio-ss-2.webp",
+        "desc": "lorem ipsum dolor sit amet"
+      },
+      "redURL": "https://bora-sen.github.io/modio-website/",
+      "desc": "Digital Media Agency Website Made With React.js, Tailwind.css and GSAP Animations.",
+      "bgColor": "#0b4f0d"
     },
     {
       "title": "Acronym© Website Redesign",
       "placeholderImg": "/images/works/acronym.webp",
+      "alternate": {
+        "title": "Test modio",
+        "imageURL": "/images/works/acronym-2.webp",
+        "desc": "lorem ipsum dolor sit amet"
+      },
       "redURL": "https://bora-sen.github.io/acronym-website/",
-      "desc": "A clothing brand website redesign project made with astro."
+      "desc": "A clothing brand website redesign project made with astro.",
+      "bgColor": "#b32334"
     },
     {
-      "title": "Modio - Media Agency Website",
-      "placeholderImg": "/images/works/modio-ss.webp",
-      "redURL": "https://bora-sen.github.io/modio-website/",
-      "desc": "Digital Media Agency Website Made With React.js, Tailwind.css and GSAP Animations."
+      "title": "Retro Donut Website",
+      "placeholderImg": "/images/works/retro-donut.webp",
+      "alternate": {
+        "title": "Test modio",
+        "imageURL": "/images/works/retro-donut-2.webp",
+        "desc": "lorem ipsum dolor sit amet"
+      },
+      "redURL": "https://bora-sen.github.io/retro-donut-website/",
+      "desc": "Responsive retro donut website with parallax gsap effects.",
+      "bgColor": "#b55e42"
+    }
+  ],
+  "works": [
+    {
+      "title": "SRT Language Translator",
+      "placeholderImg": "/images/works/srt-translator-ss.webp",
+      "redURL": "https://bora-sen.github.io/srt-translator/",
+      "desc": "Srt file language translator made with react.js and Google's Translate API."
     },
     {
       "title": "Architecture Agency Website",
@@ -58,7 +84,7 @@
     {
       "title": "Three.js Moon Example",
       "placeholderImg": "/images/works/threejs-moon-ss.webp",
-      "redURL": "http://kandilliharita.bborasen.com",
+      "redURL": "http://moon.bborasen.com",
       "desc": ""
     },
     {
