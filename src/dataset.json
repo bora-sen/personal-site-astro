@@ -1,12 +1,24 @@
 {
   "featuredWorks": [
     {
+      "title": "Joie Jewellery E-Commerce Website",
+      "placeholderImg": "/images/works/joiejewellery-ss.webp",
+      "alternate": {
+        "title": "See The Retro Donut Website Live",
+        "imageURL": "/images/works/joiejewellery-ss-2.webp",
+        "desc": "You can look at the website."
+      },
+      "redURL": "https://joiejewellery.com",
+      "desc": "Resposive e-commerce website with premium wordpress-theme.",
+      "bgColor": "#a3342c"
+    },
+    {
       "title": "Modio - Media Agency Website",
       "placeholderImg": "/images/works/modio-ss.webp",
       "alternate": {
-        "title": "Test modio",
+        "title": "See The Modio Website",
         "imageURL": "/images/works/modio-ss-2.webp",
-        "desc": "lorem ipsum dolor sit amet"
+        "desc": "You can see the work here.."
       },
       "redURL": "https://bora-sen.github.io/modio-website/",
       "desc": "Digital Media Agency Website Made With React.js, Tailwind.css and GSAP Animations.",
@@ -16,28 +28,22 @@
       "title": "Acronym© Website Redesign",
       "placeholderImg": "/images/works/acronym.webp",
       "alternate": {
-        "title": "Test modio",
+        "title": "See The Acronym© Website",
         "imageURL": "/images/works/acronym-2.webp",
-        "desc": "lorem ipsum dolor sit amet"
+        "desc": "Take a look at this project"
       },
       "redURL": "https://bora-sen.github.io/acronym-website/",
       "desc": "A clothing brand website redesign project made with astro.",
       "bgColor": "#b32334"
-    },
-    {
-      "title": "Retro Donut Website",
-      "placeholderImg": "/images/works/retro-donut.webp",
-      "alternate": {
-        "title": "Test modio",
-        "imageURL": "/images/works/retro-donut-2.webp",
-        "desc": "lorem ipsum dolor sit amet"
-      },
-      "redURL": "https://bora-sen.github.io/retro-donut-website/",
-      "desc": "Responsive retro donut website with parallax gsap effects.",
-      "bgColor": "#b55e42"
     }
   ],
   "works": [
+    {
+      "title": "Retro Donut Website",
+      "placeholderImg": "/images/works/retro-donut.webp",
+      "redURL": "https://bora-sen.github.io/retro-donut-website/",
+      "desc": "Donut website with neubrutalist design. Using Astro."
+    },
     {
       "title": "SRT Language Translator",
       "placeholderImg": "/images/works/srt-translator-ss.webp",
