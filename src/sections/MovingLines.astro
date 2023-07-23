@@ -9,11 +9,10 @@ const titlesText = titles.join(" | ")
 const titlesReverseText = titles.reverse().join(" | ")
 ---
 
-<section id="moving_texts_section" class="w-full h-screen text-white flex items-center justify-center">
-  <div class="absolute w-full h-full z-30">
-    <img id="moving_lines_back_image" class="w-full h-full object-cover object-center" alt="hero background" src="/assets/moving_lines_bg.webp" />
-  </div>
-
+<section
+  id="moving_texts_section"
+  class="bg-[url(/assets/moving_lines_bg_mobile.webp)] md:bg-[url(/assets/moving_lines_bg.webp)] bg-center bg-cover w-full h-screen text-white flex items-center justify-center"
+>
   <div class="overflow-hidden z-40 h-full w-full flex items-center justify-center text-center">
     <div class="font-tusker whitespace-nowrap rotate-[24deg] sm:rotate-[7deg]">
       <div class="moving_text_left text-7xl mb-3">
