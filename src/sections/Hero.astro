@@ -1,20 +1,20 @@
 ---
 ---
 
-<section id="hero_section" class="w-full h-screen text-white bg-[url(/assets/hero_bg.webp)] bg-center bg-cover">
+<section id="hero_section" class="w-full h-screen text-white bg-[url(/assets/hero_bg_mobile.webp)] lg:bg-[url(/assets/hero_bg.webp)] bg-center bg-cover">
   <div class="w-full h-screen flex sm:flex-row flex-col lg:justify-between">
     <div id="hero_titles" class="absolute bottom-0 md:w-[45rem] mt-auto">
       <div class="grid font-tusker-bold leading-none ml-2">
-        <span class="hero_text text-[5rem] sm:text-[6rem] md:text-[6rem]">Junior</span>
-        <span class="hero_text text-[8rem] sm:text-[10rem] md:text-[10rem]">Full-Stack</span>
-        <span class="hero_text text-[6rem] sm:text-[8rem] md:text-[10rem]">Developer</span>
+        <span class="hero_text text-[5rem] sm:text-[6rem] md:text-[6rem] opacity-0">Junior</span>
+        <span class="hero_text text-[8rem] sm:text-[10rem] md:text-[10rem] opacity-0">Full-Stack</span>
+        <span class="hero_text text-[6rem] sm:text-[8rem] md:text-[10rem] opacity-0">Developer</span>
       </div>
     </div>
     <div id="hero_desc_text" class="font-poppins absolute right-0 text-right font-bold grid uppercase text-[1.4rem] lg:text-5xl xl:text-6xl">
-      <span class="hero_desc_text">Learning,</span>
-      <span class="hero_desc_text">experimenting,</span>
-      <span class="hero_desc_text">creating and constantly pushing</span>
-      <span class="hero_desc_text">the boundaries of what's possible.</span>
+      <span class="hero_desc_text opacity-0">Learning,</span>
+      <span class="hero_desc_text opacity-0">experimenting,</span>
+      <span class="hero_desc_text opacity-0">creating and constantly pushing</span>
+      <span class="hero_desc_text opacity-0">the boundaries of what's possible.</span>
     </div>
   </div>
 </section>
@@ -28,12 +28,9 @@
     gsap.fromTo(
       ".hero_text",
       {
-        yPercent: 100,
         opacity: 0,
       },
       {
-        yPercent: 0,
-        y: 0,
         opacity: 1,
         stagger: 0.04,
         duration: 0.67,
@@ -44,10 +41,10 @@
     gsap.fromTo(
       ".hero_desc_text",
       {
-        yPercent: -800,
+        opacity: 0,
       },
       {
-        yPercent: 0,
+        opacity: 1,
         duration: 0.35,
         stagger: 0.18,
         delay: 0.4,
