@@ -6,7 +6,10 @@ build/
 
 # dependencies
 node_modules/
+
+# blog posts && placeholder images
 src/pages/blog/yazi/**
+public/images/posts/**
 
 # logs
 npm-debug.log*
