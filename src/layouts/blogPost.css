@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black text-white font-paragraph;
+  }
+  main > h1 {
+    @apply text-8xl font-tusker;
+  }
+  main > p{
+    @apply my-4 text-lg leading-relaxed tracking-wide;
+  }
+}

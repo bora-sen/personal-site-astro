@@ -1,0 +1,55 @@
+---
+import Footer from "./Footer.astro"
+import Header from "./Header.astro"
+const { frontmatter } = Astro.props
+import "./blogPost.css"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="mage/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="keywords" content={frontmatter.seoKeywords} />
+    <meta name="description" content={frontmatter.seoDescription} />
+    <title>{frontmatter.title}</title>
+    <link rel="preload" href="/assets/fonts/fonts.css" as="style" onload="this.rel='stylesheet'" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <Header />
+    <main class="max-w-[60rem] mx-auto">
+      <div class="aspect-video my-4 w-full">
+        <img class="w-full h-full object-cover object-center" src={frontmatter.placeholder} alt="" />
+      </div>
+      <slot />
+      <div class="flex items-center justify-between my-4">
+        <span class="text-3xl font-bold tracking-wide">Bu Yazıyı Paylaş</span>
+
+        <ul class="flex items-center justify-center gap-3">
+          <li>
+            <a href={`https://www.facebook.com/sharer/sharer.php?u=https://bborasen.com/blog/yazi/${frontmatter.slug}`}>
+              <img src="/assets/logo/facebook.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href={`https://twitter.com/intent/tweet?url=https://bborasen.com/blog/yazi/${frontmatter.slug}&text=${frontmatter.description}`}>
+              <img src="/assets/logo/twitter.svg" alt="" />
+            </a>
+          </li>
+
+          <li>
+            <a href={`https://www.linkedin.com/shareArticle?mini=true&url=https://bborasen.com/blog/yazi/${frontmatter.slug}`}>
+              <img src="/assets/logo/linkedin.svg" alt="" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </body>
+  <Footer />
+</html>
