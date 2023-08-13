@@ -15,7 +15,7 @@ module.exports = {
         "primary-purple": "#a92e7a",
       },
       fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
+        paragraph: ["Open Sans", "sans-serif"],
         tusker: ["TuskerRegular"],
         "tusker-bold": ["TuskerBold"],
       },

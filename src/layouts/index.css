@@ -5,7 +5,7 @@
 
 @layer base {
   body {
-    @apply bg-black transition-all box-border scroll-smooth font-poppins;
+    @apply bg-black transition-all box-border scroll-smooth font-paragraph;
   }
   ::-moz-selection {
     @apply text-white bg-black;
