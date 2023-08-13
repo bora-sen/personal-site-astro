@@ -1,0 +1,37 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro"
+const posts = await Astro.glob("./yazi/*.md")
+const nonDraftPosts = await posts.filter((post) => !post.frontmatter.draft === true)
+---
+
+<MainLayout
+  title="Bahattin Bora Şen | Full-Stack Geliştirme | Blog Yazılarım"
+  description="Web Geliştirme hakkında bolca pratik bilgiler ve Full-Stack Geliştirme hakkında yazdığım blog postlarıma ulaşın. Bahattin Bora Şen.."
+  keywords="Geliştirme, Bahattin Bora Şen, Full-Stack"
+>
+  <main>
+    <div
+      class="w-full h-[50svh] sm:h-[70svh] aspect-square sm:aspect-video bg-cover bg-no-repeat bg-center bg-[url('/assets/blog_bg_mobile.webp')] sm:bg-[url('/assets/blog_bg_desktop.webp')]"
+    >
+    </div>
+    <h1 class="block my-6 text-8xl font-tusker-bold text-center">Blog Yazılarım</h1>
+    <div class="flex justify-center items-center gap-4 flex-wrap">
+      {
+        nonDraftPosts.map((post) => (
+          <div class="bg-blue-500 lg:max-w-[40em]">
+            <div class="aspect-video mb-2 overflow-hidden">
+              <img class="w-full h-full object-cover object-center" src={post.frontmatter.placeholder} alt="" />
+            </div>
+            <div>
+              <h2 class="font-paragraph text-3xl font-bold mb-4">{post.frontmatter.title}</h2>
+              <span class="my-4">{post.frontmatter.description}</span>
+              <a class="block my-4" href={`/blog/yazi/${post.frontmatter.slug}`}>
+                Yazının Devamını Oku..
+              </a>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </main>
+</MainLayout>

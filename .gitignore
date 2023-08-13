@@ -6,6 +6,7 @@ build/
 
 # dependencies
 node_modules/
+src/pages/blog/yazi/**
 
 # logs
 npm-debug.log*
