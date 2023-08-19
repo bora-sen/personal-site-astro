@@ -1,0 +1,35 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro"
+import { webTemplates } from "../../dataset.json"
+---
+
+<MainLayout
+  title="Bahattin Bora Şen | Professional Portfolio Templates"
+  description="En kısa sürede elinizce %100 fonksiyonel ve profesyonel websiteleri elde edebilirsiniz. Şablonları inceleyip bana mail atmanız yeterli. "
+  keywords="Şablon"
+>
+  <main>
+    <section class="w-full h-[75svh] overflow-hidden">
+      <img class="w-full h-full object-cover object-center" src="/assets/templates-bg.webp" alt="" />
+    </section>
+    <section class="text-white my-8">
+      <h1 class="main_heading">Hazır Şablon Website Tasarımları</h1>
+      <p class="max-w-[50em] block mx-auto text-center text-lg leading-relaxed">
+        Aşağıda listelenen premium hazır şablonları dilediğinizce kişiselleştirip en kısa sürede elinizce %100 fonksiyonel ve profesyonel websiteleri elde
+        edebilirsiniz. Şablonları inceleyip bana mail atmanız yeterli.
+      </p>
+    </section>
+    <section class="my-4 container mx-auto flex gap-4 flex-wrap justify-center items-center">
+      {
+        webTemplates.map((temp) => (
+          <a href={temp.url} class="w-[35em] min-gth-[25em]">
+            <img class="w-full h-full object-center object-cover" src={temp.placeholder} alt={`${temp.title}'s placeholder'`} />
+            <div>
+              <span class="text-white text-xl font-bold">{temp.title}</span>
+            </div>
+          </a>
+        ))
+      }
+    </section>
+  </main>
+</MainLayout>

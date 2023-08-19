@@ -127,5 +127,57 @@
       "redURL": "https://spotify.com",
       "placeholderImg": "/images/socials/music.svg"
     }
+  ],
+  "webTemplates": [
+    {
+      "title": "EX - The Template",
+      "url": "http://11-76.com/themes/ex-the-template/",
+      "placeholder": "/images/templates/ex-the.avif"
+    },
+    {
+      "title": "Tex - Creative Tek Sayfa Portfolyo",
+      "url": "http://11-76.com/themes/tex/",
+      "placeholder": "/images/templates/ex-tex.avif"
+    },
+    {
+      "title": "Wylex - Fotoğrafçılık Tek Sayfa Portfolyo",
+      "url": "http://11-76.com/themes/wylex/",
+      "placeholder": "/images/templates/ex-wylex.avif"
+    },
+    {
+      "title": "King Size - Kreatif Portfolyo",
+      "url": "http://11-76.com/themes/king-size/",
+      "placeholder": "/images/templates/ex-king-size.avif"
+    },
+    {
+      "title": "Runex - Tek Sayfa Portfolyo",
+      "url": "http://11-76.com/themes/runex/",
+      "placeholder": "/images/templates/ex-runex.avif"
+    },
+    {
+      "title": "Yesex - Kreatif Tek Sayfa Portfolyo",
+      "url": "http://11-76.com/themes/yesex/",
+      "placeholder": "/images/templates/ex-yesex.avif"
+    },
+    {
+      "title": "Bigex - Kreatif Portfolyo",
+      "url": "http://11-76.com/themes/bigex/",
+      "placeholder": "/images/templates/ex-bigex.avif"
+    },
+    {
+      "title": "The Wall - Kreatif Fotoğrafçılık Portfolyo",
+      "url": "http://11-76.com/themes/the-wall/",
+      "placeholder": "/images/templates/ex-the-wall.avif"
+    },
+    {
+      "title": "Blackex - Fotoğrafçılık Portfolyo",
+      "url": "http://11-76.com/themes/blackex/",
+      "placeholder": "/images/templates/ex-blackex.avif"
+    },
+    {
+      "title": "Luxex - Otel Portfolyo",
+      "url": "http://11-76.com/themes/luxex/",
+      "placeholder": "/images/templates/ex-luxex.avif"
+    }
   ]
 }
