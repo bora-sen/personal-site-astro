@@ -5,9 +5,9 @@ const nonDraftPosts = await posts.filter((post) => !post.frontmatter.draft === t
 ---
 
 <MainLayout
-  title="Bahattin Bora Şen | Full-Stack Geliştirme | Blog Yazılarım"
-  description="Web Geliştirme hakkında bolca pratik bilgiler ve Full-Stack Geliştirme hakkında yazdığım blog postlarıma ulaşın. Bahattin Bora Şen.."
-  keywords="Geliştirme, Bahattin Bora Şen, Full-Stack"
+  title="Bahattin Bora Şen | Front-End Geliştirme | Blog Yazılarım"
+  description="Web Geliştirme hakkında bolca pratik bilgiler ve Front-End Geliştirme hakkında yazdığım blog postlarıma ulaşın. Bahattin Bora Şen.."
+  keywords="Geliştirme, Bahattin Bora Şen, Front-End"
 >
   <main>
     <div
@@ -15,10 +15,10 @@ const nonDraftPosts = await posts.filter((post) => !post.frontmatter.draft === t
     >
     </div>
     <h1 class="block my-6 text-8xl font-tusker-bold text-center">Blog Yazılarım</h1>
-    <div class="flex justify-center items-center gap-4 flex-wrap">
+    <div class="flex justify-center items-center gap-4 flex-wrap p-2">
       {
         nonDraftPosts.map((post) => (
-          <div class="bg-blue-500 lg:max-w-[40em]">
+          <div class="lg:max-w-[40em]">
             <div class="aspect-video mb-2 overflow-hidden">
               <img class="w-full h-full object-cover object-center" src={post.frontmatter.placeholder} alt="" />
             </div>

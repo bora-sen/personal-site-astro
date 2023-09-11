@@ -5,7 +5,7 @@
 
 @layer base {
   body {
-    @apply bg-black transition-all box-border scroll-smooth font-paragraph;
+    @apply bg-black transition-all box-border scroll-smooth font-paragraph text-white;
   }
   ::-moz-selection {
     @apply text-white bg-black;
@@ -16,5 +16,23 @@
   }
   .main_heading{
     @apply text-8xl font-tusker block text-center my-4 text-white
+  }
+  #blogPostContent > h1{
+    @apply text-3xl md:text-6xl font-tusker-bold;
+  }
+  #blogPostContent > h2{
+    @apply text-2xl md:text-5xl font-tusker-bold;
+  }
+  #blogPostContent > h3{
+    @apply text-xl md:text-4xl font-tusker-bold;
+  }
+  #blogPostContent > p{
+    @apply my-3 text-lg;
+  }
+  #blogPostContent > h2 > a{
+    @apply text-purple-400
+  }
+  #blogPostContent > p > img{
+    @apply mt-12 mb-4
   }
 }

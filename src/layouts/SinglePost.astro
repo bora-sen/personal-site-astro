@@ -2,7 +2,7 @@
 import Footer from "./Footer.astro"
 import Header from "./Header.astro"
 const { frontmatter } = Astro.props
-import "./blogPost.css"
+import "./index.css"
 ---
 
 <!DOCTYPE html>
@@ -26,7 +26,12 @@ import "./blogPost.css"
       <div class="aspect-video my-4 w-full">
         <img class="w-full h-full object-cover object-center" src={frontmatter.placeholder} alt="" />
       </div>
-      <slot />
+      <section id="blogPostContent">
+
+        <slot />
+
+      </section>
+
       <div class="flex items-center justify-between my-4">
         <span class="text-3xl font-bold tracking-wide">Bu Yazıyı Paylaş</span>
 

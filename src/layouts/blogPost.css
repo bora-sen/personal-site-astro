@@ -4,12 +4,11 @@
 
 @layer base {
   body {
-    @apply bg-black text-white font-paragraph;
+    background-color: black;
+    color:white;
   }
-  main > h1 {
-    @apply text-8xl font-tusker;
-  }
-  main > p{
-    @apply my-4 text-lg leading-relaxed tracking-wide;
+  h1 {
+    background-color: red;
+    font-size:3rem;
   }
 }
