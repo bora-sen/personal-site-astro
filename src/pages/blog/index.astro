@@ -25,9 +25,11 @@ const nonDraftPosts = await posts.filter((post) => !post.frontmatter.draft === t
             <div>
               <h2 class="font-paragraph text-3xl font-bold mb-4">{post.frontmatter.title}</h2>
               <span class="my-4">{post.frontmatter.description}</span>
-              <a class="block my-4" href={`/blog/yazi/${post.frontmatter.slug}`}>
-                Yazının Devamını Oku..
-              </a>
+              <div class="text-right">
+                <a class="inline-block my-4 mr-2 border-white p-2 border-2 hover:text-black hover:bg-white transition-all" href={`/blog/yazi/${post.frontmatter.slug}`}>
+                  Yazının Devamını Oku..
+                </a>
+              </div>
             </div>
           </div>
         ))
