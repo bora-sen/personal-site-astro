@@ -15,7 +15,7 @@ const titlesReverseText = titles.reverse().join(" | ")
 
 <section
   id="moving_texts_section"
-  class="bg-[url(/assets/moving_lines_bg_mobile.webp)] md:bg-[url(/assets/moving_lines_bg.webp)] bg-center bg-cover w-full h-screen text-white flex items-center justify-center"
+  class="bg-[url(/assets/moving_lines_bg_mobile.webp)] md:bg-[url(/assets/moving_lines_bg.webp)] bg-center bg-cover w-full h-[50svh] text-white flex items-center justify-center"
 >
   <div class="overflow-hidden z-40 h-full w-full flex items-center justify-center text-center">
     <div class="font-tusker whitespace-nowrap rotate-[24deg] sm:rotate-[7deg]">
@@ -43,8 +43,8 @@ const titlesReverseText = titles.reverse().join(" | ")
         scrollTrigger: {
           trigger: "#moving_texts_section",
           start: "top center",
-          end: "bottom top",
-          scrub: true,
+          end: "bottom center",
+          scrub: 1.6,
         },
         x: 170,
       }
@@ -58,8 +58,8 @@ const titlesReverseText = titles.reverse().join(" | ")
         scrollTrigger: {
           trigger: "#moving_texts_section",
           start: "top center",
-          end: "bottom top",
-          scrub: true,
+          end: "bottom center",
+          scrub: 1,
         },
         x: -170,
       }
