@@ -3,22 +3,49 @@ import { works } from "../dataset.json"
 ---
 
 <section id="Works" class="text-white bg-primary-dark w-full pt-12 mb-12">
-  <h4 class="font-tusker-bold text-9xl text-center mb-4">İşler</h4>
-  <div class="grid grid-cols-1 lg:grid-cols-3 gap-y-8 justify-items-center">
+  <h4 class="font-tusker-bold lg:text-9xl text-8xl text-center mb-4">Portfolyo</h4>
+  <div class="flex-col items-center justify-center text-center">
     {
       works.map((work) => {
         return (
-          <a href={work.redURL} class="max-w-[40rem] p-2 border-white">
-            <div class="aspect-video overflow-hidden mb-2">
-              <img class="w-full h-full object-cover object-center" src={work.placeholderImg} alt="" />
-            </div>
-            <div class="mt-2">
-              <h5 class="text-2xl font-bold">{work.title}</h5>
-              <p>{work.desc}</p>
-            </div>
+          <a href={work.redURL} class="work-container text-3xl lg:text-[5rem] font-tusker-bold block my-24 leading-relaxed tracking-wider">
+            <img
+              class="swipeimage lg:fixed lg:top-0 lg:left-0 lg:invisible object-cover pointer-events-none lg:-translate-x-1/2 lg:-translate-y-1/2"
+              width="600px"
+              src={work.placeholderImg}
+              alt=""
+            />
+            <span class="work-hoverable block">{work.title}</span>
           </a>
         )
       })
     }
   </div>
 </section>
+<script>
+  import gsap from "gsap"
+  if (window.innerWidth > 1024) {
+    gsap.set(".work-container img.swipeimage", { yPercent: -50, xPercent: -50 })
+
+    gsap.utils.toArray(".work-container").forEach((el) => {
+      const image = el.querySelector("img.swipeimage"),
+        setX = gsap.quickSetter(image, "x", "px"),
+        setY = gsap.quickSetter(image, "y", "px"),
+        align = (e) => {
+          setX(e.clientX)
+          setY(e.clientY)
+        },
+        startFollow = () => document.addEventListener("mousemove", align),
+        stopFollow = () => document.removeEventListener("mousemove", align),
+        fade = gsap.to(image, { autoAlpha: 0.4, ease: "none", paused: true, onReverseComplete: stopFollow })
+
+      el.addEventListener("mouseenter", (e) => {
+        fade.play()
+        startFollow()
+        align(e)
+      })
+
+      el.addEventListener("mouseleave", () => fade.reverse())
+    })
+  }
+</script>
