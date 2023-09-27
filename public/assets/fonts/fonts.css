@@ -8,3 +8,9 @@
   src: url("/assets/fonts/tusker_bold.woff2");
   font-display: swap;
 }
+@font-face {
+  font-family: TuskerSuperBold;
+  src: url("/assets/fonts/tusker_superbold.woff");
+  font-display: swap;
+}
+

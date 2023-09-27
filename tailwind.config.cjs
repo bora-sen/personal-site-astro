@@ -18,6 +18,7 @@ module.exports = {
         paragraph: ["Open Sans", "sans-serif"],
         tusker: ["TuskerRegular"],
         "tusker-bold": ["TuskerBold"],
+        "tusker-superbold": ["TuskerSuperBold"],
       },
     },
   },
