@@ -1,54 +1,42 @@
 {
   "featuredWorks": [
     {
-      "title": "Joie Jewellery E-Commerce Website",
-      "placeholderImg": "/images/works/joiejewellery-ss.webp",
+      "title": "Joie Jewellery E-Ticaret Websitesi",
+      "placeholderImg": "/images/works/joie.webp",
       "alternate": {
-        "title": "See The Retro Donut Website Live",
-        "imageURL": "/images/works/joiejewellery-ss-2.webp",
-        "desc": "You can look at the website."
+        "title": "Siteye Git!",
+        "imageURL": "/images/works/joie-2.webp",
+        "desc": "Websiteyi Canlı Görün!"
       },
       "redURL": "https://joiejewellery.com",
-      "desc": "Resposive e-commerce website with premium wordpress-theme.",
+      "desc": "Responsiv tasarımlı premium wordpress e-ticaret sitesi.",
       "bgColor": "#a3342c"
-    },
-    {
-      "title": "Modio - Media Agency Website",
-      "placeholderImg": "/images/works/modio-ss.webp",
-      "alternate": {
-        "title": "See The Modio Website",
-        "imageURL": "/images/works/modio-ss-2.webp",
-        "desc": "You can see the work here.."
-      },
-      "redURL": "https://bora-sen.github.io/modio-website/",
-      "desc": "Digital Media Agency Website Made With React.js, Tailwind.css and GSAP Animations.",
-      "bgColor": "#0b4f0d"
     },
     {
       "title": "Acronym© Website Redesign",
       "placeholderImg": "/images/works/acronym.webp",
       "alternate": {
-        "title": "See The Acronym© Website",
+        "title": "Acronym© Websitesini Gör!",
         "imageURL": "/images/works/acronym-2.webp",
-        "desc": "Take a look at this project"
+        "desc": "Projeyi gör"
       },
       "redURL": "https://bora-sen.github.io/acronym-website/",
-      "desc": "A clothing brand website redesign project made with astro.",
+      "desc": "Astro ile yapılmış Giyim şirketi websitesi yeniden-dizaynı.",
       "bgColor": "#b32334"
     }
   ],
   "works": [
     {
-      "title": "Retro Donut Website",
-      "placeholderImg": "/images/works/retro-donut.webp",
-      "redURL": "https://bora-sen.github.io/retro-donut-website/",
+      "title": "haticeacar.info",
+      "placeholderImg": "/images/works/haticeacar.webp",
+      "redURL": "https://haticeacar.info/tr",
       "desc": "Donut website with neubrutalist design. Using Astro."
     },
     {
-      "title": "SRT Language Translator",
-      "placeholderImg": "/images/works/srt-translator-ss.webp",
-      "redURL": "https://bora-sen.github.io/srt-translator/",
-      "desc": "Srt file language translator made with react.js and Google's Translate API."
+      "title": "kalitemedya.com.tr",
+      "placeholderImg": "/images/works/kalitemedya.webp",
+      "redURL": "https://www.kalitemedya.com.tr",
+      "desc": "Donut website with neubrutalist design. Using Astro."
     },
     {
       "title": "Architecture Agency Website",
@@ -57,127 +45,16 @@
       "desc": "Architectural Agency Website Made With React.js Tailwindcss and Three.js"
     },
     {
-      "title": "Shortly URL Shortener App",
-      "placeholderImg": "/images/works/shortly-ss.webp",
-      "redURL": "https://bora-sen.github.io/shortly-app/",
-      "desc": "The URL Shortener App is a side project that I developed with the aim of learning more about public APIs. The app allows users to input long URLs and generate a shortened URL using a public API. This makes it convenient for users to share links without having to type out long URLs."
-    },
-    {
-      "title": "Weather App",
-      "placeholderImg": "/images/works/weather-app-ss.webp",
-      "redURL": "https://bora-sen.github.io/weather-app/",
-      "desc": "I developed this app to help people easily access the latest weather information for cities in Turkey. To achieve this, I used the Axios JavaScript library, which allowed me to easily fetch the location data for various cities in Turkey using an external API."
-    },
-    {
-      "title": "Manage Landing Page | React.js",
-      "placeholderImg": "/images/works/manage-ss.webp",
-      "redURL": "https://bora-sen.github.io/manage-landing-page/",
-      "desc": "This Project was a valuable learning experience that allowed me to develop my skills in website layout design and implementation using React.js. The project involved creating a landing page for a fictitious product, with a focus on creating an engaging and visually appealing layout that would attract and retain user attention."
-    },
-    {
-      "title": "Hermorsuffer Website",
+      "title": "hermorsuffer.com",
       "placeholderImg": "/images/works/hermorsuffer-ss.webp",
       "redURL": "https://hermorsuffer.com",
       "desc": "My side project that I developed during my spare time to improve my React.js skills and to create a practical application that can help people manage their daily tasks. The app features an interactive user interface, which I built using React.js, a popular JavaScript library known for its simplicity and flexibility."
     },
-
     {
-      "title": "Spendit Money Spending App",
-      "placeholderImg": "/images/works/spendit-ss.webp",
-      "redURL": "https://bora-sen.github.io/spendit-react/",
-      "desc": ""
-    },
-    {
-      "title": "Three.js Moon Example",
-      "placeholderImg": "/images/works/threejs-moon-ss.webp",
-      "redURL": "http://moon.bborasen.com",
-      "desc": ""
-    },
-    {
-      "title": "Tip Calculator App",
-      "placeholderImg": "/images/works/tip-calculator-ss.webp",
-      "redURL": "https://bora-sen.github.io/tip-calculator/",
-      "desc": ""
-    },
-    {
-      "title": "Todo App",
-      "placeholderImg": "/images/works/todo-ss.webp",
-      "redURL": "http://todo.bborasen.com",
-      "desc": ""
-    }
-  ],
-  "socials": [
-    {
-      "title": "Instagram",
-      "redURL": "https://instagram.com/senkisibora",
-      "placeholderImg": "/images/socials/instagram.svg"
-    },
-    {
-      "title": "Linkedin",
-      "redURL": "https://linkedin.com/in/bborasen",
-      "placeholderImg": "/images/socials/linkedin.svg"
-    },
-    {
-      "title": "Github",
-      "redURL": "https://github.com/bora-sen",
-      "placeholderImg": "/images/socials/github.svg"
-    },
-    {
-      "title": "Spotify",
-      "redURL": "https://spotify.com",
-      "placeholderImg": "/images/socials/music.svg"
-    }
-  ],
-  "webTemplates": [
-    {
-      "title": "EX - The Template",
-      "url": "http://11-76.com/themes/ex-the-template/",
-      "placeholder": "/images/templates/ex-the.avif"
-    },
-    {
-      "title": "Tex - Creative Tek Sayfa Portfolyo",
-      "url": "http://11-76.com/themes/tex/",
-      "placeholder": "/images/templates/ex-tex.avif"
-    },
-    {
-      "title": "Wylex - Fotoğrafçılık Tek Sayfa Portfolyo",
-      "url": "http://11-76.com/themes/wylex/",
-      "placeholder": "/images/templates/ex-wylex.avif"
-    },
-    {
-      "title": "King Size - Kreatif Portfolyo",
-      "url": "http://11-76.com/themes/king-size/",
-      "placeholder": "/images/templates/ex-king-size.avif"
-    },
-    {
-      "title": "Runex - Tek Sayfa Portfolyo",
-      "url": "http://11-76.com/themes/runex/",
-      "placeholder": "/images/templates/ex-runex.avif"
-    },
-    {
-      "title": "Yesex - Kreatif Tek Sayfa Portfolyo",
-      "url": "http://11-76.com/themes/yesex/",
-      "placeholder": "/images/templates/ex-yesex.avif"
-    },
-    {
-      "title": "Bigex - Kreatif Portfolyo",
-      "url": "http://11-76.com/themes/bigex/",
-      "placeholder": "/images/templates/ex-bigex.avif"
-    },
-    {
-      "title": "The Wall - Kreatif Fotoğrafçılık Portfolyo",
-      "url": "http://11-76.com/themes/the-wall/",
-      "placeholder": "/images/templates/ex-the-wall.avif"
-    },
-    {
-      "title": "Blackex - Fotoğrafçılık Portfolyo",
-      "url": "http://11-76.com/themes/blackex/",
-      "placeholder": "/images/templates/ex-blackex.avif"
-    },
-    {
-      "title": "Luxex - Otel Portfolyo",
-      "url": "http://11-76.com/themes/luxex/",
-      "placeholder": "/images/templates/ex-luxex.avif"
+      "title": "Retro Donut Website",
+      "placeholderImg": "/images/works/retro-donut.webp",
+      "redURL": "https://bora-sen.github.io/retro-donut-website/",
+      "desc": "Donut website with neubrutalist design. Using Astro."
     }
   ]
 }
