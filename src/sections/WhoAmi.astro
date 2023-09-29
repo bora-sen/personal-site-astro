@@ -1,4 +1,4 @@
-<section id="whoami_section" class="text-white w-full h-screen overflow-hidden">
+<section id="AboutMe" class="text-white w-full h-screen overflow-hidden">
   <div class="flex md:flex-row flex-col-reverse h-full">
     <div id="left" class="w-full md:w-1/2 flex justify-center items-center">
       <div class="w-full lg:w-[55rem] p-4">
@@ -88,7 +88,7 @@
   document.addEventListener("DOMContentLoaded", () => {
     const tlRight = gsap.timeline({
       scrollTrigger: {
-        trigger: "#whoami_section",
+        trigger: "#AboutMe",
         start: "top 70%",
         end: "center 20%",
         scrub: 1.2,
@@ -96,7 +96,7 @@
     })
     const tlLeft = gsap.timeline({
       scrollTrigger: {
-        trigger: "#whoami_section",
+        trigger: "#AboutMe",
         start: "top bottom",
         end: "center center",
         scrub: 1.2,

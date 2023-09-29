@@ -4,6 +4,9 @@
 
 
 @layer base {
+  html{
+    scroll-behavior: smooth;
+  }
   body {
     @apply bg-black transition-all box-border scroll-smooth font-paragraph text-white;
   }
