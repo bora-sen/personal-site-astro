@@ -2,26 +2,21 @@
 import { featuredWorks } from "../dataset.json"
 ---
 
-<section class="w-full h-auto text-white mt-6 overflow-hidden">
+<section class="w-full h-auto text-white mt-6 overflow-hidden my-24">
   <h5 class="w-full text-center font-tusker text-9xl font-bold my-8">Öne Çıkan İşler</h5>
-  {
-    featuredWorks.map((work) => {
-      return (
-          <div class="flex w-full lg:flex-row flex-col h-screen bg-black z-10 sm:pt-0 pt-14 ">
-            <div class="lg:w-1/2 w-full lg:h-full slide-to-right">
+  <div class="flex flex-col lg:flex-row gap-2">
+    {
+      featuredWorks.map((work) => {
+        return (
+          <div class="flex flex-col items-center justify-center lg:w-1/2">
+            <div class="w-full lg:h-full">
               <div class="h-full flex items-center justify-center">
-                <img
-                  width="100%"
-                  height="100%"
-                  class="transition-all hover:drop-shadow-[10px_10px_0_rgba(3,3,0,1)]"
-                  src={work.placeholderImg}
-                  alt={`${work.title}'s placeholder`}
-                />
+                <img width="100%" height="100%" src={work.placeholderImg} alt={`${work.title}'s placeholder`} />
               </div>
             </div>
-            <div class="lg:w-1/2 grid my-auto p-4 slide-to-left">
-              <h4 class="font-tusker text-8xl md:text-9xl">{work.title}</h4>
-              <p class="leading-relaxed lg:my-4 uppercase w-full lg:w-[37rem] text-ellipsis overflow-hidden sm:whitespace-normal">{work.desc}</p>
+            <div class="grid my-auto p-4 text-center">
+              <h4 class="font-tusker text-7xl md:text-8xl">{work.title}</h4>
+              <p class="leading-relaxed lg:my-4 uppercase w-full text-ellipsis sm:whitespace-normal">{work.desc}</p>
               <a
                 class="block mx-auto border-2 border-white px-4 py-2 rounded-full hover:bg-white hover:text-black hover:text-bold transition-all"
                 href={work.redURL}
@@ -30,38 +25,8 @@ import { featuredWorks } from "../dataset.json"
               </a>
             </div>
           </div>
-      )
-    })
-  }
+        )
+      })
+    }
+  </div>
 </section>
-
-<script>
-  import { gsap } from "gsap"
-  import { ScrollTrigger } from "gsap/all"
-  gsap.registerPlugin(ScrollTrigger)
-
-  document.addEventListener("DOMContentLoaded", () => {
-    gsap.utils.toArray(".slide-to-left").map((element) => {
-      gsap.from(element, {
-        scrollTrigger: {
-          trigger: element,
-          start: "top bottom",
-          end: "center center",
-          scrub: 1.2,
-        },
-        xPercent: 100,
-      })
-    })
-    gsap.utils.toArray(".slide-to-right").map((element) => {
-      gsap.from(element, {
-        scrollTrigger: {
-          trigger: element,
-          start: "top bottom",
-          end: "center center",
-          scrub: 1.2,
-        },
-        xPercent: -100,
-      })
-    })
-  })
-</script>

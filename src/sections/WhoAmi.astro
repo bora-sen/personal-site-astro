@@ -1,112 +1,22 @@
-<section id="AboutMe" class="text-white w-full h-screen overflow-hidden">
-  <div class="flex md:flex-row flex-col-reverse h-full">
-    <div id="left" class="w-full md:w-1/2 flex justify-center items-center">
-      <div class="w-full lg:w-[55rem] p-4">
-        <div class="grid mb-4">
-          <h3 class="font-tusker-bold uppercase text-7xl">Hey!</h3>
-          <h4 class="font-tusker-bold font-bold uppercase text-8xl">Ben Bora</h4>
-        </div>
-        <p class="leading-tight uppercase tracking-wider font-paragraph font-light md:text-4xl">
-          Kapsamlı dijital çözümler geliştirmek için yaratıcı ve azimli birisi. Gelişime karşı bakış açısını yeni teknolojilerle dışa vurmaya odaklanır. Problem
-          çözmeye karşı farklı bakış açılarını keşfetmekten korkmaz.
-        </p>
-        <div class="text-end">
-          <a class="inline-block mt-4 border-white border-2 hover:shadow-[8px_8px_0_rgba(255,255,255,1)] transition-all px-4 py-2 font-bold" href="/blog/"
-            >Blog Yazılarımı İncele..</a
-          >
-        </div>
-      </div>
-    </div>
-    <div id="webglSection" class="w-full h-screen md:w-1/2 md:h-full -z-50 xm:z-50">
-      <canvas id="webGlCanvas" class="w-full h-full"></canvas>
-    </div>
+<section class="w-full h-screen text-center flex items-center justify-center">
+  <div class="text-center px-4 lg:px-0 max-w-[90rem] text-container overflow-hidden">
+    <span id="AboutMe" class="font-paragraph font-bold text-xl lg:text-6xl inline-block">
+      Kapsamlı dijital çözümler geliştirmek için yaratıcı ve azimli. Bakış açısını yeni teknolojilerle dışa vurmaya odaklanır. Problem çözmeye karşı farklı
+      açıdan bakmaktan korkmaz.
+    </span>
   </div>
 </section>
 <script>
-  import * as THREE from "three"
-  import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js"
-  import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader.js"
-  import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
-
-  import { gsap } from "gsap"
-  import { ScrollTrigger } from "gsap/ScrollTrigger"
+  import gsap from "gsap"
+  import { ScrollTrigger } from "gsap/all"
   gsap.registerPlugin(ScrollTrigger)
-
-  const canvas = document.getElementById("webGlCanvas")
-  const scene = new THREE.Scene()
-
-  const ambientLight = new THREE.AmbientLight(0xffffff, 0.2)
-  scene.add(ambientLight)
-  const pointLight1 = new THREE.SpotLight(0xffffff, 1)
-  pointLight1.position.setY(3)
-  scene.add(pointLight1)
-
-  const pointLight2 = new THREE.SpotLight("#1b6cbb", 1)
-  pointLight2.position.setX(-2)
-  pointLight2.position.setY(-1)
-  pointLight2.position.setZ(2)
-  scene.add(pointLight2)
-
-  const pointLight3 = new THREE.SpotLight("#a92e7a", 1)
-  pointLight3.position.setX(-2)
-  pointLight3.position.setY(-1)
-  pointLight3.position.setZ(2)
-  scene.add(pointLight3)
-
-  const camera = new THREE.PerspectiveCamera(75, canvas.clientWidth / canvas.clientHeight, 0.1, 100)
-  camera.position.setZ(5)
-  const loader = new GLTFLoader()
-
-  const dracoLoader = new DRACOLoader()
-  dracoLoader.setDecoderPath("https://www.gstatic.com/draco/v1/decoders/")
-  loader.setDRACOLoader(dracoLoader)
-
-  loader.load("/assets/model/IBMPC.glb", (gltf) => {
-    const model = gltf.scenes[0]
-    model.castShadow = true
-    model.position.setY(-1)
-    model.rotateY(-0.8)
-
-    scene.add(model)
-    return model
-  })
-
-  const renderer = new THREE.WebGLRenderer({ canvas: canvas })
-  renderer.setSize(canvas.clientWidth, canvas.clientHeight)
-
-  const controls = new OrbitControls(camera, canvas)
-  controls.autoRotate = true
-  controls.autoRotateSpeed = 0.6
-
-  function animate() {
-    window.requestAnimationFrame(animate)
-    controls.update()
-    renderer.render(scene, camera)
-  }
-  animate()
-
-  document.addEventListener("DOMContentLoaded", () => {
-    const tlRight = gsap.timeline({
-      scrollTrigger: {
-        trigger: "#AboutMe",
-        start: "top 70%",
-        end: "center 20%",
-        scrub: 1.2,
-      },
-    })
-    const tlLeft = gsap.timeline({
-      scrollTrigger: {
-        trigger: "#AboutMe",
-        start: "top bottom",
-        end: "center center",
-        scrub: 1.2,
-      },
-    })
-    tlLeft.from("#left", {
-      yPercent: 100,
-    })
-    tlRight.from("#webglSection", {
-      yPercent: 100,
-    })
+  gsap.from(".text-container span", {
+    yPercent: 100,
+    scrollTrigger: {
+      trigger: ".text-container",
+      start: "top-=100 center",
+      end: "center center",
+      scrub: 1.2,
+    },
   })
 </script>
