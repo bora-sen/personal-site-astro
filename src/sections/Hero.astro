@@ -1,7 +1,7 @@
 ---
 ---
 
-<section id="hero_section" class="w-full h-screen text-white bg-[url(/assets/hero_bg_mobile.webp)] lg:bg-[url(/assets/hero_bg.webp)] bg-center bg-cover">
+<section id="hero_section" class="w-full h-[100svh] text-white bg-[url(/assets/hero_bg_mobile.webp)] lg:bg-[url(/assets/hero_bg.webp)] bg-center bg-cover">
   <div class="w-full h-screen flex sm:flex-row flex-col lg:justify-between">
     <div id="hero_titles" class="absolute bottom-3 md:w-[45rem] mt-auto">
       <div class="grid font-tusker-bold leading-none ml-2">
@@ -56,10 +56,13 @@
       scrollTrigger: {
         trigger: "#hero_section",
         start: "center center",
-        end: "bottom top",
-        scrub: 1.4,
+        end: "bottom center",
+        scrub: 1.2,
       },
     })
-    scrollTl.to("#hero_section", {})
+    scrollTl.to("#hero_section", {
+      opacity: 0,
+      scale: 0.94,
+    })
   })
 </script>
