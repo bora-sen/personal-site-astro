@@ -2,13 +2,15 @@
 import { featuredWorks } from "../dataset.json"
 ---
 
-<section class="w-full h-auto text-white mt-6 overflow-hidden my-24">
-  <h5 class="w-full text-center font-tusker text-9xl font-bold my-8">Öne Çıkan İşler</h5>
+<section id="FeaturedWorks" class="w-full h-auto text-white mt-6 overflow-hidden my-24">
+  <div class="overflow-hidden">
+    <h5 class="featured-works-title w-full text-center font-tusker text-9xl font-bold my-8">Öne Çıkan İşler</h5>
+  </div>
   <div class="flex flex-col lg:flex-row gap-2">
     {
       featuredWorks.map((work) => {
         return (
-          <div class="flex flex-col items-center justify-center lg:w-1/2">
+          <div class="featured-work flex flex-col items-center justify-center lg:w-1/2">
             <div class="w-full lg:h-full">
               <div class="h-full flex items-center justify-center">
                 <img width="100%" height="100%" src={work.placeholderImg} alt={`${work.title}'s placeholder`} />
@@ -30,3 +32,26 @@ import { featuredWorks } from "../dataset.json"
     }
   </div>
 </section>
+<script>
+  import gsap from "gsap"
+  import { ScrollTrigger } from "gsap/ScrollTrigger"
+  gsap.registerPlugin(ScrollTrigger)
+  const scrollTl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#FeaturedWorks",
+      start: "top center",
+      end: "center center",
+      scrub: 1.2,
+    },
+  })
+  scrollTl.from(".featured-works-title", {
+    scale: 0.96,
+    yPercent:160,
+    opacity: 0.2,
+  })
+  scrollTl.from(".featured-work", {
+    scale: 0.96,
+    opacity: 0,
+    stagger: 0.3,
+  })
+</script>
