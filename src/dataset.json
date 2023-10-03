@@ -3,26 +3,14 @@
     {
       "title": "Joie Jewellery E-Ticaret Websitesi",
       "placeholderImg": "/images/works/joie.webp",
-      "alternate": {
-        "title": "Siteye Git!",
-        "imageURL": "/images/works/joie-2.webp",
-        "desc": "Websiteyi Canlı Görün!"
-      },
       "redURL": "https://joiejewellery.com",
-      "desc": "Responsiv tasarımlı premium wordpress e-ticaret sitesi.",
-      "bgColor": "#a3342c"
+      "desc": "Responsiv tasarımlı premium wordpress e-ticaret sitesi."
     },
     {
       "title": "Acronym© Website Redesign",
       "placeholderImg": "/images/works/acronym.webp",
-      "alternate": {
-        "title": "Acronym© Websitesini Gör!",
-        "imageURL": "/images/works/acronym-2.webp",
-        "desc": "Projeyi gör"
-      },
       "redURL": "https://bora-sen.github.io/acronym-website/",
-      "desc": "Astro ile yapılmış Giyim şirketi websitesi yeniden-dizaynı.",
-      "bgColor": "#b32334"
+      "desc": "Astro ile yapılmış Giyim şirketi websitesi yeniden-dizaynı."
     }
   ],
   "works": [
@@ -30,13 +18,19 @@
       "title": "haticeacar.info",
       "placeholderImg": "/images/works/haticeacar.webp",
       "redURL": "https://haticeacar.info/tr",
-      "desc": "Donut website with neubrutalist design. Using Astro."
+      "desc": "Hatice Acar Kişisel Portfolyo Sitesi"
+    },
+    {
+      "title": "gunesfikirakademi.com",
+      "placeholderImg": "/images/works/gunesfikirakademi.webp",
+      "redURL": "https://gunesfikirakademi.com",
+      "desc": "Güneş Fikir Akademi Resmi Blog Sitesi"
     },
     {
       "title": "kalitemedya.com.tr",
       "placeholderImg": "/images/works/kalitemedya.webp",
       "redURL": "https://www.kalitemedya.com.tr",
-      "desc": "Donut website with neubrutalist design. Using Astro."
+      "desc": "Kalite Medya Resmi İnternet Sitesi"
     },
     {
       "title": "Architecture Agency Website",
@@ -49,12 +43,6 @@
       "placeholderImg": "/images/works/hermorsuffer-ss.webp",
       "redURL": "https://hermorsuffer.com",
       "desc": "My side project that I developed during my spare time to improve my React.js skills and to create a practical application that can help people manage their daily tasks. The app features an interactive user interface, which I built using React.js, a popular JavaScript library known for its simplicity and flexibility."
-    },
-    {
-      "title": "Retro Donut Website",
-      "placeholderImg": "/images/works/retro-donut.webp",
-      "redURL": "https://bora-sen.github.io/retro-donut-website/",
-      "desc": "Donut website with neubrutalist design. Using Astro."
     }
   ]
 }
