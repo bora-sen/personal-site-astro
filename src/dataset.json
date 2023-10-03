@@ -33,16 +33,25 @@
       "desc": "Kalite Medya Resmi İnternet Sitesi"
     },
     {
-      "title": "Architecture Agency Website",
-      "placeholderImg": "/images/works/architecture-ss.webp",
-      "redURL": "https://bora-sen.github.io/architectural-agency-website/",
-      "desc": "Architectural Agency Website Made With React.js Tailwindcss and Three.js"
-    },
-    {
       "title": "hermorsuffer.com",
       "placeholderImg": "/images/works/hermorsuffer-ss.webp",
       "redURL": "https://hermorsuffer.com",
       "desc": "My side project that I developed during my spare time to improve my React.js skills and to create a practical application that can help people manage their daily tasks. The app features an interactive user interface, which I built using React.js, a popular JavaScript library known for its simplicity and flexibility."
+    }
+  ],
+  "experimentalWorks": [
+    {
+      "title": "Modern Mimarlık Ajansı Websitesi",
+      "placeholderVideoURL": "/videos/architecture-website.mp4",
+      "redURL": "https://bora-sen.github.io/architectural-agency-website/",
+      "desc": "Architectural Agency Website Made With React.js Tailwindcss and Three.js"
+    },
+
+    {
+      "title": "Modio Kreatif Ajans Websitesi",
+      "placeholderVideoURL": "/videos/modio-website.mp4",
+      "redURL": "https://bora-sen.github.io/modio-website/",
+      "desc": "Architectural Agency Website Made With React.js Tailwindcss and Three.js"
     }
   ]
 }

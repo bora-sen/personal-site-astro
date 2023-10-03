@@ -1,3 +1,4 @@
+export { default as Experimental } from "./Experimental.astro"
 export { default as FeaturedWorks } from "./FeaturedWorks.astro"
 export { default as Hero } from "./Hero.astro"
 export { default as MovingLines } from "./MovingLines.astro"
