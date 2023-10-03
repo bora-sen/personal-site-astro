@@ -1,8 +1,19 @@
-<section class="w-full h-screen text-center flex items-center justify-center">
+---
+const AboutMeText =
+  "Kapsamlı dijital çözümler geliştirmek için yaratıcı ve azimli. Bakış açısını yeni teknolojilerle dışa vurmaya odaklanır. Problem çözmeye karşı farklı açıdan bakmaktan korkmaz."
+const splittedText = AboutMeText.split(" ")
+---
+
+<section id="AboutMe" class="w-full h-screen text-center flex items-center justify-center bg-[url('/assets/aboutme-bg.webp')] bg-center bg-cover">
   <div class="text-center px-4 lg:px-0 max-w-[90rem] text-container overflow-hidden">
-    <span id="AboutMe" class="font-paragraph font-bold text-xl lg:text-6xl inline-block">
-      Kapsamlı dijital çözümler geliştirmek için yaratıcı ve azimli. Bakış açısını yeni teknolojilerle dışa vurmaya odaklanır. Problem çözmeye karşı farklı
-      açıdan bakmaktan korkmaz.
+    <span id="AboutMe" class="font-paragraph font-bold text-2xl md:text-5xl lg:text-6xl inline-block">
+      {
+        splittedText.map((char) => (
+          <div class="inline-block overflow-hidden py-1 fill-none">
+            <span class=" mx-[0.2rem] md:mx-[0.3rem] lg:mx-[0.5rem] inline-block aboutmeText">{char + " "}</span>
+          </div>
+        ))
+      }
     </span>
   </div>
 </section>
@@ -10,13 +21,28 @@
   import gsap from "gsap"
   import { ScrollTrigger } from "gsap/all"
   gsap.registerPlugin(ScrollTrigger)
-  gsap.from(".text-container span", {
+
+  const animate = gsap.timeline()
+  animate.from("#AboutMe", {
+    opacity: 0,
+    scale: 0.93,
+    scrollTrigger: {
+      trigger: "#AboutMe",
+      start: "top center",
+      end: "center center",
+      scrub: 1.2,
+      markers: true,
+    },
+  })
+  animate.from(".aboutmeText", {
     yPercent: 100,
     scrollTrigger: {
       trigger: ".text-container",
       start: "top-=100 center",
       end: "center center",
       scrub: 1.2,
+      markers: true,
     },
+    stagger: 0.2,
   })
 </script>
