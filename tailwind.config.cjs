@@ -15,7 +15,7 @@ module.exports = {
         "primary-purple": "#a92e7a",
       },
       fontFamily: {
-        paragraph: ["Open Sans", "sans-serif"],
+        paragraph: ["Roboto", "sans-serif"],
         tusker: ["TuskerRegular"],
         "tusker-bold": ["TuskerBold"],
         "tusker-superbold": ["TuskerSuperBold"],
