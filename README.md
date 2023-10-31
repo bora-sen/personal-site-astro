@@ -1,5 +1,5 @@
 # Personal Portfolio Website
-![website](./website.mp4)
+![website](./ss.webp)
 
 ## Tech Tree
 ![Astro Badge](https://img.shields.io/badge/Astro-BC52EE?logo=astro&logoColor=fff&style=for-the-badge)
