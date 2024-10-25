@@ -2,13 +2,14 @@
 import dataset from "../dataset.json"
 const { works } = dataset
 const titles = []
-works.map((work) => {
-  return titles.push(work.title)
-})
+
+for(let i =0;i<6;i++){
 
 works.map((work) => {
   return titles.push(work.title)
 })
+
+}
 const titlesText = titles.join(" | ")
 const titlesReverseText = titles.reverse().join(" | ")
 ---
