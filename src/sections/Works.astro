@@ -8,7 +8,9 @@ import { works } from "../dataset.json"
     {
       works.map((work) => {
         return (
-          <a href={work.redURL} class="work-container text-3xl lg:text-[5rem] font-tusker-bold block my-24 leading-relaxed tracking-wider">
+          <div class="w-screen work-container my-24">
+
+          <a href={work.redURL} class=" text-3xl lg:text-[5rem] font-tusker block leading-relaxed tracking-wider">
             <img
               class="swipeimage lg:fixed lg:top-0 lg:left-0 lg:invisible object-cover pointer-events-none lg:-translate-x-1/2 lg:-translate-y-1/2"
               width="600px"
@@ -17,6 +19,8 @@ import { works } from "../dataset.json"
             />
             <span class="work-hoverable block">{work.title}</span>
           </a>
+          <span class="text-xl font-paragraph">{work.desc}</span>
+          </div>
         )
       })
     }
