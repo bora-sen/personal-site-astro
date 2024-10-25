@@ -15,9 +15,9 @@
   ],
   "works": [
     {
-      "title": "haticeacar.info",
-      "placeholderImg": "/images/works/haticeacar.webp",
-      "redURL": "https://haticeacar.info/tr",
+      "title": "haticemelisaacar.info",
+      "placeholderImg": "/images/works/haticemelisaacar.webp",
+      "redURL": "https://www.haticemelisaacar.info/tr/ana-sayfa/",
       "desc": "Hatice Acar Kişisel Portfolyo Sitesi"
     },
     {
@@ -31,25 +31,19 @@
       "placeholderImg": "/images/works/kalitemedya.webp",
       "redURL": "https://www.kalitemedya.com.tr",
       "desc": "Kalite Medya Resmi İnternet Sitesi"
-    },
-    {
-      "title": "hermorsuffer.com",
-      "placeholderImg": "/images/works/hermorsuffer-ss.webp",
-      "redURL": "https://hermorsuffer.com",
-      "desc": "My side project that I developed during my spare time to improve my React.js skills and to create a practical application that can help people manage their daily tasks. The app features an interactive user interface, which I built using React.js, a popular JavaScript library known for its simplicity and flexibility."
     }
   ],
   "experimentalWorks": [
     {
       "title": "Modern Mimarlık Ajansı Websitesi",
-      "placeholderVideoURL": "/videos/architecture-website.mp4",
+      "placeholderImg": "/images/works/architecture.webp",
       "redURL": "https://bora-sen.github.io/architectural-agency-website/",
-      "desc": "Architectural Agency Website Made With React.js Tailwindcss and Three.js"
+      "desc": "Three.js kullanılarak animasyonlu arkaplanlı mimarlık ajansı sitesi"
     },
 
     {
       "title": "Modio Kreatif Ajans Websitesi",
-      "placeholderVideoURL": "/videos/modio-website.mp4",
+      "placeholderImg": "/images/works/modio.webp",
       "redURL": "https://bora-sen.github.io/modio-website/",
       "desc": "Architectural Agency Website Made With React.js Tailwindcss and Three.js"
     }
